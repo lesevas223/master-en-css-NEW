@@ -10,6 +10,14 @@
 
 }
 
+@font-face {
+
+    font-family: "fajala";
+    src: url("/fonts/FjallaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*ESTILOS GENERALES*/
 * {
     padding: 0px;
@@ -306,16 +314,23 @@ button:active {
     margin-bottom: 10 px;
 }
 
-#aside input #aside label {
+#aside input,
+#aside label {
     margin: 0px auto;
     text-align: center;
 
 }
 
 /*secciones*/
-#seccion {
+#secciones {
     float: right;
     width: 75%;
-    font-family: sans-serif, arial, helvetica;
-    margin-right: 30px;
+    font-family: sans-serif, Arial, Helvetica, ;
+    margin-right: 20px;
+}
+
+#secciones .titulo {
+    font-family: sans-serif;
+    font-size: 2px;
+
 }
