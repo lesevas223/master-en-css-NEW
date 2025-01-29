@@ -18,6 +18,25 @@
     font-style: normal;
 }
 
+@font-face {
+
+    font-family: "fajala";
+    src: url("fonts/FjallaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "icons";
+    src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+    src: url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+        url("fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("fonts/websymbols-regular-webfont.ttf") format("truetype"),
+}
+
+
+
 /*ESTILOS GENERALES*/
 * {
     padding: 0px;
@@ -49,6 +68,19 @@ a:hover {
 .blue {
     color: #0c73f2 !important;
 }
+
+
+.orange {
+    color: #d69d2a !important;
+}
+
+.icon {
+    font-family: "icons";
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
 
 
 /*FORMULARIOS*/
@@ -247,16 +279,6 @@ button:active {
     font-family: sans-serif, helvetica, arial;
 }
 
-#frase {
-    width: 180px;
-    padding: 10px;
-    font-size: 14px;
-    font-family: sans-serif;
-
-
-}
-
-
 #aside .widget {
     display: block;
     width: 180px;
@@ -325,12 +347,86 @@ button:active {
 #secciones {
     float: right;
     width: 75%;
-    font-family: sans-serif, Arial, Helvetica, ;
+    font-family: sans-serif, helvetica, arial;
     margin-right: 20px;
 }
 
 #secciones .titulo {
-    font-family: sans-serif;
-    font-size: 2px;
+    font-family: "fajala";
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
 
+#secciones section {
+    margin-top: 20px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#secciones .article {
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+#secciones .date {
+    color: gray;
+    font-size: 14px;
+}
+
+#secciones .stickerOne,
+#secciones .stickerTwo {
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+
+#secciones .stickerTwo {
+    margin-left: 1340px;
+}
+
+#secciones sections {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#frase {
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+
+}
+
+/*FOOTER*/
+#footer {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: sans-serif, helvetica, arial;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
 }
