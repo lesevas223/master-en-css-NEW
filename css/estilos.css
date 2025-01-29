@@ -262,14 +262,14 @@ button:active {
 /*CONTENIDO*/
 #contenido {
     width: 1250px;
-    min-height: 1100px;
+    min-height: 1500px;
     margin: 0px auto;
 }
 
 /*BARRA LATERAL*/
 #aside,
 #frase {
-    clear: both;
+
     width: 200px;
     float: left;
     margin: 30px;
@@ -280,6 +280,7 @@ button:active {
 }
 
 #aside .widget {
+    clear: both;
     display: block;
     width: 180px;
     margin: 5px auto;
@@ -394,7 +395,7 @@ button:active {
 }
 
 #secciones .stickerTwo {
-    margin-left: 1340px;
+    margin-left: 860px;
 }
 
 #secciones sections {
