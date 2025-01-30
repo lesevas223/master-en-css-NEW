@@ -55,4 +55,43 @@ aside {
 
 /*responsive*/
 /*desde la anchura 0 px hasta la anchura 888px*/
-@media(max-width:888px) {}
+@media(max-width:888px) {
+    #containers {
+        overflow: hidden;
+    }
+
+    /*se ejecutaran estos estilos*/
+    #articles article {
+        width: 40%;
+        background: red;
+    }
+
+}
+
+@media(max-width:652px) {
+
+    aside {
+        float: none;
+        min-height: auto;
+        line-height: 20px;
+        width: 90%;
+        padding: 19px;
+    }
+
+    #articles {
+        width: 100%;
+    }
+
+    #articles article {
+        width: 90%;
+        background: blue;
+    }
+}
+
+@media(max-width:554px) {
+
+
+    body {
+        background-color: lightsalmon;
+    }
+}
