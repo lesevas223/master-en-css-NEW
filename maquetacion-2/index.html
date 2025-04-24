@@ -1,84 +1,296 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Master en CSS - Sebastian Vasquez WEB</title>
-    <link rel="icon" type="favicon/x-icon" href="css/img/supertux.png">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="icon" type="favicon/x-icon" href="css/img/supertux.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
 
-<body>
+  <body>
     <!-- cabecera -->
     <header id="header">
-        <div class="wrap">
-            <div id="logo">
-                <span class="engranaje">S</span>
-                <h3>BLOG</h3>
-            </div>
+      <div class="wrap">
+        <div id="logo">
+          <span class="gear">S</span>
+          <h3>BLOG</h3>
         </div>
         <nav id="menu">
-            <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">FORMACION</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">FORMACION</a></li>
+            <li><a href="#">CONTACTO</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
     <!--fin de la cabecera-->
 
-    <!--inicio del banner-->
     <section class="wrap wrap-content">
-        <section id="info">
+      <!--inicio del banner-->
+      <div id="banner">
+        <h1>CURSOS DE DESARROLLO WEB CON SEBASTIAN VASQUEZ</h1>
+      </div>
+      <!--fin del banner-->
 
-            <div id="banner">
-                <h1>CURSOS DE DESARROLLO WEB CON SEBASTIAN VASQUEZ</h1>
+      <div id="cards">
+        <div class="card">
+          <p class="icon">H</p>
+          <h2 class="category">Desarrollo Web</h2>
+          <p class="description">
+            Aprende los principales lenguajes para desarollar webs !Conviertete
+            en un WebMaster!
+          </p>
+        </div>
+        <div class="card">
+          <p class="icon">_</p>
+          <h2 class="category">Sistemas operativos</h2>
+          <p class="description">
+            Aprende a administrar sistemas Linux y Windows !Conviertete en un
+            SysAdmin!
+          </p>
+        </div>
+        <div class="card">
+          <p class="icon">S</p>
+          <h2 class="category">Hardware</h2>
+          <p class="description">
+            Conoce los componentes de un computador y aprende a repararlos
+            !Conviertete en un tecnico en computadores!
+          </p>
+        </div>
+        <div class="card">
+          <p class="icon">u</p>
+          <h2 class="category">Redes e internet</h2>
+          <p class="description">
+            Aprende a configurar redes y servidores !Conviertete en un
+            administrador de redes!
+          </p>
+        </div>
+        <div class="card">
+          <p class="icon">a</p>
+          <h2 class="category">Base de datos</h2>
+          <p class="description">
+            Aprende a administrar y crear bases de datos !Conviertete en un DBA!
+          </p>
+        </div>
+      </div>
+
+      <!--inicio de barra lateral-->
+      <div class+clearfix></div>
+      <aside id="lateral">
+        <h3>BUSCAR</h3>
+        <div id="search">
+          <form>
+            <input type="text" />
+            <input type="button" value="L" class="icon" />
+          </form>
+        </div>
+
+        <h3>LOGIN</h3>
+        <div id="login" class="aside-box">
+          <form>
+            <div class="input-wrapper">
+              <label id="user" class="icon icon-label">U</label>
+              <input type="email" />
             </div>
-            <div id="cards">
-                <div class="card">
-                    <p class="icon">H</p>
-                    <h2 class="category">Desarrollo Web </h2>
-                    <p class="description">
-                        Aprende los principales lenguajes para desarollar webs !Conviertete en un WebMaster!
-                    </p>
-                </div>
-                <div class="card">
-                    <p class="icon">_</p>
-                    <h2 class="category">Sistemas operativos</h2>
-                    <p class="description">
-                        Aprende a administrar sistemas Linux y Windows !Conviertete en un SysAdmin!
-                    </p>
-                </div>
-                <div class="card">
-                    <p class="icon">S</p>
-                    <h2 class="category">Hardware</h2>
-                    <p class="description">
-                        Conoce los componentes de un computador y aprende a repararlos !Conviertete en un tecnico en
-                        computadores!
-                    </p>
-                </div>
-                <div class="card">
-                    <p class="icon">u</p>
-                    <h2 class="category">Redes e internet </h2>
-                    <p class="description">
-                        Aprende a configurar redes y servidores !Conviertete en un administrador de redes!
-                    </p>
-                </div>
-                <div class="card">
-                    <p class="icon">a</p>
-                    <h2 class="category">Base de datos</h2>
-                    <p class="description">
-                        Aprende a administrar y crear bases de datos !Conviertete en un DBA!
-
-                    </p>
-                </div>
+            <div class="input-wrapper">
+              <label id="password" class="icon icon-label">w</label>
+              <input type="password" />
             </div>
+            <input type="submit" value="entrar" />
+            <input type="reset" value="borrar" />
+            <a href="#">Registrate aqui</a>
+            <a href="#">has olvidado tu contraseña</a>
+          </form>
+        </div>
 
+        <h3>REDES SOCIALES</h3>
+        <div id="social" class="aside-box">
+          <div class="twitter">
+            <a href="#" class="icon">t</a>
+          </div>
+          <div class="facebook">
+            <a href="#" class="icon">f</a>
+          </div>
+          <div class="youtube">
+            <a href="#" class="icon">y</a>
+          </div>
+        </div>
 
-        </section>
-    </section> <!--fin del banner-->
-</body>
+        <h3>PATROCINADORES</h3>
+        <div class="aside-box"></div>
+      </aside>
+      <!--fin de barra lateral-->
 
+      <!--inicio articulos -->
+      <section id="articles">
+        <h2>ultimos articulos</h2>
+        <div class="clearfix"></div>
+
+        <article>
+          <div class="data">
+            <span>fecha:18 abril</span>
+            <span>categoria:pruebas</span>
+          </div>
+          <h4>
+            <a href="#">titulo del articulo</a>
+          </h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+            obcaecati numquam sit atque suscipit nobis eum ex aliquam voluptate
+            saepe, ullam rem nihil quas omnis dicta cum minus? Corrupti,
+            reprehenderit.
+          </p>
+        </article>
+
+        <article>
+          <div class="data">
+            <span>fecha:18 abril</span>
+            <span>categoria:pruebas</span>
+          </div>
+          <h4>
+            <a href="#">titulo del articulo</a>
+          </h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+            obcaecati numquam sit atque suscipit nobis eum ex aliquam voluptate
+            saepe, ullam rem nihil quas omnis dicta cum minus? Corrupti,
+            reprehenderit.
+          </p>
+        </article>
+
+        <article>
+          <div class="data">
+            <span>fecha:18 abril</span>
+            <span>categoria:pruebas</span>
+          </div>
+          <h4>
+            <a href="#">titulo del articulo</a>
+          </h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+            obcaecati numquam sit atque suscipit nobis eum ex aliquam voluptate
+            saepe, ullam rem nihil quas omnis dicta cum minus? Corrupti,
+            reprehenderit.
+          </p>
+        </article>
+
+        <article>
+          <div class="data">
+            <span>fecha:18 abril</span>
+            <span>categoria:pruebas</span>
+          </div>
+          <h4>
+            <a href="#">titulo del articulo</a>
+          </h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+            obcaecati numquam sit atque suscipit nobis eum ex aliquam voluptate
+            saepe, ullam rem nihil quas omnis dicta cum minus? Corrupti,
+            reprehenderit.
+          </p>
+        </article>
+
+        <article>
+          <div class="data">
+            <span>fecha:18 abril</span>
+            <span>categoria:pruebas</span>
+          </div>
+          <h4>
+            <a href="#">titulo del articulo</a>
+          </h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+            obcaecati numquam sit atque suscipit nobis eum ex aliquam voluptate
+            saepe, ullam rem nihil quas omnis dicta cum minus? Corrupti,
+            reprehenderit.
+          </p>
+        </article>
+
+        <article>
+          <div class="data">
+            <span>fecha:18 abril</span>
+            <span>categoria:pruebas</span>
+          </div>
+          <h4>
+            <a href="#">titulo del articulo</a>
+          </h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+            obcaecati numquam sit atque suscipit nobis eum ex aliquam voluptate
+            saepe, ullam rem nihil quas omnis dicta cum minus? Corrupti,
+            reprehenderit .
+          </p>
+        </article>
+
+        <article id="blog">
+          <a href="#">ir al blog</a>
+        </article>
+      </section>
+      <!--fin articulos-->
+    </section>
+
+    <!--pie d pagina-->
+    <div class="clearfix"></div>
+    <footer id="footer">
+      <div class="wrap">
+        <nav id="menu_footer">
+          <h5>MENU</h5>
+          <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">FORMACION</a></li>
+            <li><a href="#">CONTACTO</a></li>
+          </ul>
+        </nav>
+
+        <div id="location">
+          <h5>DONDE ESTAMOS UBICADOS?</h5>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12
+            !1m3!1d3098.133388406631!2d125.75457460836353!3d39
+            .05787426092113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4
+            f13.1!3m3!1m2!1s0x357e02a723b12d3b%3A0x968cdffa311f08
+            b4!2sPyongyang%20Metro%20Museum!5e0!3m2!1ses-419!2smx
+            !4v1745264496410!5m2!1ses-419!2smx"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div id="info">
+          <h5>Desarrollado con</h5>
+          <p>
+            <img
+              src="css/img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png"
+            />
+          </p>
+          <h5>optimizado para</h5>
+          <p id="browser">
+            <img src="css/img/ios.png" alt="ios" />
+
+            <img src="css/img/chrome.png" alt="chrome" />
+
+            <img src="css/img/firefox-icon.png" alt="firefox" />
+
+            <img src="css/img/safari.png" alt="safari" />
+
+            <img src="css/img/android.png" alt="android" />
+
+            <img src="css/img/Opera_256x256.png" alt="opera" />
+          </p>
+          <h5>AUTOR</h5>
+          <p>&copy; Sebastian Vasquez WEB - sebastian.vasquez.es</p>
+        </div>
+      </div>
+    </footer>
+    <!--fin pie de pagina-->
+    <!--comentario de prueba-->
+  </body>
 </html>
